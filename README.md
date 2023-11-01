@@ -9,7 +9,7 @@
   <li> <strong>Posts:</strong> View and edit posts.</li>
  <li> <strong>Comments:</strong> View comments on posts.</li>
   <li> <strong>Todos:</strong> View a list of todos.</li>
-<li>- Sign in with your username and email to access your personalized dashboard.</li>
+<li> Sign in with your username and email to access your personalized dashboard.</li>
 </ul>
 <h2>## Installation</h2>
 
@@ -18,7 +18,7 @@ To run this project on your local machine, follow these steps:
 <h2>Clone the repository:</h2> 
    ```bash
    git clone https://github.com/yourusername/user-dashboard.git
-
+</br>
   <ul>
   <li> <strong>Change the project Directory:</strong> cd user-dashboard</li>
    <li><strong>Install the dependencies:</strong> npm install axios react-router-dom formik bootstrap popper.js jquery</li>
