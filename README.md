@@ -1,6 +1,6 @@
 <h1># User Dashboard Web Application</h1>
 
-<h3>User Dashboard is a web application that allows users to view personal details, posts, comments, and todos. It's built with React and utilizes the JSONPlaceholder API for fetching data.</h3>
+<h4>User Dashboard is a web application that allows users to view personal details, posts, comments, and todos. It's built with React and utilizes the JSONPlaceholder API for fetching data.</h4>
 <h3>Deployment Link</h3> <h3> https://user-dashboard-api.netlify.app/</h3>
 <h2>## Features</h2>
 <ul>
