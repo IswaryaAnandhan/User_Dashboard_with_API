@@ -57,7 +57,7 @@ const AllUsers = () => {
         // Set the user in the context
         setUser(selectedUser);
         // Navigate to the dashboard
-        navigate(`/dashboard/${selectedUser.id}`);
+        navigate(`/posts/${selectedUser.id}`);
         alert("Signin successfully");
       } else {
         alert("User not found");
