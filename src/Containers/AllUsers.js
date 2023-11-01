@@ -4,12 +4,14 @@ import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 
 import { UserContext } from "../Components/UserContext";
+import { Loading } from "../Components";
 
 const AllUsers = () => {
   const { setUser } = useContext(UserContext);
   const navigate = useNavigate();
 
   const [users, setUsers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,6 +22,9 @@ const AllUsers = () => {
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
+      }
+      finally{
+        setIsLoading(false);
       }
     };
 
@@ -72,6 +77,9 @@ const AllUsers = () => {
           <div className="card border-0 shadow-lg my-5">
             <div className="card-body p-0">
               <div className="row">
+              {isLoading ? (
+          <Loading />
+        ) : (
                 <div className="col-lg-6 d-lg-block">
                   <h2 className="text-primary">
                     List of All username and email
@@ -85,7 +93,7 @@ const AllUsers = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div>)}
                 <div className="col-lg-6">
                   <div className="p-5">
                     <h1 className="h3 text-success mb-2">
